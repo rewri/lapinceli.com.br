@@ -8,7 +8,7 @@
     <?= $this->Html->css(array(
         'bootstrap.min.css',
         'font-awesome.css',
-        'owl.carousel.min.css',
+        'owl.carousel.css',
         'owl.theme.default.css'
     )) ?>
 

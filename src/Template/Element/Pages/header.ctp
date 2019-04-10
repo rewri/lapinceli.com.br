@@ -14,7 +14,7 @@
                 <li><a style="font-weight: 600"></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a>Siga-nos nas redes sociais:</a></li>
+                <li><a>Siga-nos nas redes sociais</a></li>
                 <li><a href=""><span class="fab fa-facebook-square"></span></a></li>
                 <li><a href=""><span class="fab fa-instagram"></span></a></li>
             </ul>
