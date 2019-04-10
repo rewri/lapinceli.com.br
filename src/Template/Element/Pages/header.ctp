@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-static-top" style="margin-bottom: 0; background-color: #000">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0; background-color: #000">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
