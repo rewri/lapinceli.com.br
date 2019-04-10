@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-static-top" style="margin-bottom: 0">
+<nav class="navbar navbar-inverse navbar-static-top" style="margin-bottom: 0; background-color: #000">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -7,18 +7,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" style="font-weight: 600">+55 (14) 3880.9221 / +55 (14) 99737.9599</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a style="font-weight: 600"></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../navbar/">Default</a></li>
-                <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-                <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                <li><a>Siga-nos nas redes sociais:</a></li>
+                <li><a href=""><span class="fab fa-facebook-square"></span></a></li>
+                <li><a href=""><span class="fab fa-instagram"></span></a></li>
             </ul>
         </div>
     </div>
