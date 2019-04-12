@@ -31,8 +31,21 @@
 
     <?= $this->fetch('scriptBottom') ?>
 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5LmOHyYJJrkvjJzvfaVqwdsHuhQagG_I&callback=initMap"></script>
+
     <script>
+
+        function initMap() {
+            var uluru = {lat: -22.884058, lng:  -48.444169};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 15, center: uluru}
+            );
+            var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+
         $(document).ready(function() {
+
+
 
             $('.owl-carousel').owlCarousel({
                 loop:true,
