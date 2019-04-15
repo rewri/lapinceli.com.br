@@ -11,7 +11,13 @@
                 <div class="product-box text-center">
                     <?= $this->Html->link(
                         $this->Html->image('products/produto_01.jpg', array('height' => 350, 'width' => 350, 'alt' => 'Shampoo Anti-Resíduos', 'title' => 'Shampoo Anti-Resíduos')),
-                        array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 1),
+                        array(
+                            'plugin' => null,
+                            'controller' => 'products',
+                            'action' => 'detail',
+                            'slug' => strtolower(\Cake\Utility\Inflector::slug('Shampoo Anti-Resíduo', '-')),
+                            'id' => 1,
+                        ),
                         array('escape' => false)
                     ); ?>
                     <p class="product-title">Shampoo Anti-Resíduos</p>
@@ -19,7 +25,13 @@
                     <p>
                         <?= $this->Html->link(
                             'Veja mais detalhes',
-                            array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 1),
+                            array(
+                                'plugin' => null,
+                                'controller' => 'products',
+                                'action' => 'detail',
+                                'slug' => strtolower(\Cake\Utility\Inflector::slug('Shampoo Anti-Resíduo', '-')),
+                                'id' => 1,
+                            ),
                             array('class' => 'btn-detail btn-ghost', 'escape' => false)
                         ); ?>
                     </p>
@@ -28,7 +40,13 @@
                 <div class="product-box text-center">
                     <?= $this->Html->link(
                         $this->Html->image('products/produto_02.jpg', array('height' => 350, 'width' => 350, 'alt' => 'Shock Keratin', 'title' => 'Shock Keratin')),
-                        array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 2),
+                        array(
+                            'plugin' => null,
+                            'controller' => 'products',
+                            'action' => 'detail',
+                            'slug' => strtolower(\Cake\Utility\Inflector::slug('Shock Keratin', '-')),
+                            'id' => 2,
+                        ),
                         array('escape' => false)
                     ); ?>
                     <p class="product-title">Shock Keratin</p>
@@ -36,7 +54,13 @@
                     <p>
                         <?= $this->Html->link(
                             'Veja mais detalhes',
-                            array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 2),
+                            array(
+                                'plugin' => null,
+                                'controller' => 'products',
+                                'action' => 'detail',
+                                'slug' => strtolower(\Cake\Utility\Inflector::slug('Shock Keratin', '-')),
+                                'id' => 2,
+                            ),
                             array('class' => 'btn-detail btn-ghost', 'escape' => false)
                         ); ?>
                     </p>
@@ -45,7 +69,13 @@
                 <div class="product-box text-center">
                     <?= $this->Html->link(
                         $this->Html->image('products/produto_03.jpg', array('height' => 350, 'width' => 350, 'alt' => 'Shock Keratin', 'title' => 'Shock Keratin')),
-                        array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 3),
+                        array(
+                            'plugin' => null,
+                            'controller' => 'products',
+                            'action' => 'detail',
+                            'slug' => strtolower(\Cake\Utility\Inflector::slug('Reconstruor Térmico Capilar', '-')),
+                            'id' => 3,
+                        ),
                         array('escape' => false)
                     ); ?>
                     <p class="product-title">Reconstruor Térmico Capilar</p>
@@ -53,7 +83,13 @@
                     <p>
                         <?= $this->Html->link(
                             'Veja mais detalhes',
-                            array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 3),
+                            array(
+                                'plugin' => null,
+                                'controller' => 'products',
+                                'action' => 'detail',
+                                'slug' => strtolower(\Cake\Utility\Inflector::slug('Reconstruor Térmico Capilar', '-')),
+                                'id' => 3,
+                            ),
                             array('class' => 'btn-detail btn-ghost', 'escape' => false)
                         ); ?>
                     </p>
@@ -62,7 +98,13 @@
                 <div class="product-box text-center">
                     <?= $this->Html->link(
                         $this->Html->image('products/produto_04.jpg', array('height' => 350, 'width' => 350, 'alt' => 'Shock Keratin', 'title' => 'Shock Keratin')),
-                        array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 4),
+                        array(
+                            'plugin' => null,
+                            'controller' => 'products',
+                            'action' => 'detail',
+                            'slug' => strtolower(\Cake\Utility\Inflector::slug('Máscara Teia', '-')),
+                            'id' => 4,
+                        ),
                         array('escape' => false)
                     ); ?>
                     <p class="product-title">Máscara Teia</p>
@@ -70,7 +112,13 @@
                     <p>
                         <?= $this->Html->link(
                             'Veja mais detalhes',
-                            array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 4),
+                            array(
+                                'plugin' => null,
+                                'controller' => 'products',
+                                'action' => 'detail',
+                                'slug' => strtolower(\Cake\Utility\Inflector::slug('Máscara Teia', '-')),
+                                'id' => 4,
+                            ),
                             array('class' => 'btn-detail btn-ghost', 'escape' => false)
                         ); ?>
                     </p>
@@ -79,7 +127,13 @@
                 <div class="product-box text-center">
                     <?= $this->Html->link(
                         $this->Html->image('products/produto_02.jpg', array('height' => 350, 'width' => 350, 'alt' => 'Shock Keratin', 'title' => 'Shock Keratin')),
-                        array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 2),
+                        array(
+                            'plugin' => null,
+                            'controller' => 'products',
+                            'action' => 'detail',
+                            'slug' => strtolower(\Cake\Utility\Inflector::slug('Shock Keratin', '-')),
+                            'id' => 2,
+                        ),
                         array('escape' => false)
                     ); ?>
                     <p class="product-title">Shock Keratin</p>
@@ -87,7 +141,13 @@
                     <p>
                         <?= $this->Html->link(
                             'Veja mais detalhes',
-                            array('plugin' => null, 'controller' => 'products', 'action' => 'detail', 'id' => 2),
+                            array(
+                                'plugin' => null,
+                                'controller' => 'products',
+                                'action' => 'detail',
+                                'slug' => strtolower(\Cake\Utility\Inflector::slug('Shock Keratin', '-')),
+                                'id' => 2,
+                            ),
                             array('class' => 'btn-detail btn-ghost', 'escape' => false)
                         ); ?>
                     </p>

@@ -1,4 +1,4 @@
-<div class="container-fluid block-company" style="">
+<div class="container-fluid block-company">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xs-12">

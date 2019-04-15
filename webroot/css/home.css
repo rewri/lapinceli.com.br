@@ -69,47 +69,6 @@ body {
     width: 100%;
 }
 
-/*** NAVBAR ***/
-.navbar {
-    min-height: 80px;
-    border-radius: 0;
-    margin-bottom: 0;
-}
-.navbar-toggle {
-    margin-top: 23px;
-    padding: 9px 10px !important;
-}
-.navbar-nav > li > a {
-    padding-right: 45px;
-    font-size: 16px;
-    color: #cacaca !important;
-}
-.navbar-nav > li:first-child > a {
-    padding-right: 15px;
-    margin-right: 20px;
-}
-.navbar-nav > li:last-child > a {
-    padding-right: 0;
-}
-.navbar-nav > li > a:hover {
-    color: #fff !important;
-}
-@media (min-width: 768px) {
-    .navbar-nav > li > a {
-        padding-top: 26.5px;
-        padding-bottom: 26.5px;
-        line-height: 27px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .top-header {
-        display: none;
-    }
-    .navbar-nav > li > a {
-        font-size: 16px;
-    }
-}
-
 /*** HEADER HERO ***/
 .hero {
     border-top: 2px solid #fff;
@@ -150,7 +109,15 @@ body {
     background-color: #f1f1f1;
     min-height: 350px;
     padding: 35px 0;
-    margin-top: 50px;
+    margin-top: 35px;
+}
+@media screen and (max-width: 600px) {
+    .block-company {
+        margin-top: 10px;
+    }
+    .block-company h1 {
+        margin-top: 0;
+    }
 }
 .block-company h3 {
     font-family: 'Courgette', cursive;
@@ -239,6 +206,14 @@ body {
 .block-newsletter .form form {
     width: 80%
 }
+@media screen and (max-width: 600px) {
+    .block-newsletter .form {
+        padding: 5px 0 30px 30px;
+    }
+    .block-newsletter .form form {
+        width: 90%
+    }
+}
 
 .block-newsletter .form .form-control {
     border-radius: 25px;
@@ -272,8 +247,63 @@ body {
 }
 
 /*** BLOCK SERVICES ***/
+.block-services {
+    padding: 50px 0 80px 0;
+}
+@media screen and (max-width: 600px) {
+    .block-services {
+        padding: 45px 15px 30px 15px;
+    }
+}
+.block-services h2 {
+    margin-bottom: 35px;
+}
+.block-services h3 {
+    margin: 15px 0 0 0;
+    color: #AC7834;
+    margin-bottom: 25px;
+    font-family: 'Courgette', cursive;
+}
+.block-services .video-div {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.block-services .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.block-services .btn-detail {
+    margin-top: 25px;
+}
 
-
+/*** BLOCK FOOTER ***/
+.block-footer {
+    background-color: #010;
+    border-bottom: 3px solid #CEA475;
+}
+.block-footer .map-div {
+    padding: 0;
+}
+.block-footer .address-div {
+    padding: 20px 0 0 25px;
+}
+.block-footer p {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.block-footer .address-div .social-icon {
+    font-size: 40px;
+    color: #fff;
+}
+.block-footer .address-div .social-icon:hover {
+    color: #AC7834;
+}
 
 
 

@@ -186,6 +186,52 @@ th {
     padding: 0;
 }
 
+#toTopButton {
+    display: inline-block;
+    background-color: #7f8485;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    padding-top: 7px;
+}
+@media screen and (max-width: 600px) {
+    #toTopButton {
+        bottom: 5px;
+        right: 20px;
+    }
+    #toTopButton.show {
+        opacity: .5;
+        visibility: visible;
+    }
+}
+#toTopButton::after {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 30px;
+    color: #fff;
+}
+#toTopButton:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#toTopButton:active {
+    background-color: #555;
+}
+#toTopButton.show {
+    opacity: .7;
+    visibility: visible;
+}
+
 .text-12 {
     font-size: 12px;
 }
@@ -223,3 +269,46 @@ th {
 .top-header a:hover {
     color: #bf7c3f;
 }
+
+/*** NAVBAR ***/
+.navbar {
+    min-height: 80px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.navbar-toggle {
+    margin-top: 23px;
+    padding: 9px 10px !important;
+}
+.navbar-nav > li > a {
+    padding-right: 45px;
+    font-size: 16px;
+    color: #cacaca !important;
+}
+.navbar-nav > li:first-child > a {
+    padding-right: 15px;
+    margin-right: 20px;
+}
+.navbar-nav > li:last-child > a {
+    padding-right: 0;
+}
+.navbar-nav > li > a:hover {
+    color: #fff !important;
+}
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .top-header {
+        display: none;
+    }
+    .navbar-nav > li > a {
+        font-size: 16px;
+    }
+}
+
+

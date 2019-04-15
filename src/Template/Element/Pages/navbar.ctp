@@ -22,6 +22,21 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
+
+                <?php
+
+                    debug($this->request->params['controller']);
+
+                    switch (strtolower($this->request->params['controller'])) {
+                        case 'company' :
+                            $activeHome = null;
+                            $activeCompany = 'active';
+                            $activeProdiucts = 'active';
+                            break;
+                    }
+
+                ?>
+
                 <li class="active">
                     <?php echo $this->Html->link('<span class="fa fa-home"></span>',
                         array(

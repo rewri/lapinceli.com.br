@@ -18,7 +18,7 @@
                 <div class="pixel-overlay"></div>
             </div>
         </div>
-        <div class="col-md-7 col-xs-12 form">
+        <div class="col-md-7 col-xs-12 form  gradient-bottom">
             <h3><i class="fas fa-paper-plane"></i> Newsletter</h3>
             <p>Cadastre-se para receber novidades e promoções exclusivas:</p>
             <?= $this->Form->create('', array()); ?>

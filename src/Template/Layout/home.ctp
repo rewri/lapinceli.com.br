@@ -3,7 +3,7 @@
 <head>
     <?= $this->Html->charset() ?>
     <?= $this->element('Default/metaTags') ?>
-    <title><?= $defaultPageTitle ?> | <?= $this->fetch('title') ?></title>
+    <title><?= $defaultPageTitle ?></title>
 
     <?= $this->Html->css(array(
         'bootstrap.min.css',
@@ -27,65 +27,21 @@
         'jquery-3.3.1.min.js',
         'bootstrap.min.js',
         'font-awesome.min.js',
-        'owl.carousel.js'
+        'owl.carousel.js',
+        'custom.js',
     )) ?>
 
     <?= $this->fetch('scriptBottom') ?>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5LmOHyYJJrkvjJzvfaVqwdsHuhQagG_I&callback=initMap"></script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
     <script>
-
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                alert('ef');
-                x.className += " responsive";
-            } else {
-                alert('ewdf');
-                x.className = "topnav";
-            }
-        }
-
         function initMap() {
-            var uluru = {lat: -22.884058, lng:  -48.444169};
+            var center = {lat: -22.880233, lng:  -48.443995};
             var map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 15, center: uluru}
+                document.getElementById('map'), {zoom: 15, center: center}
             );
-            var marker = new google.maps.Marker({position: uluru, map: map});
+            var marker = new google.maps.Marker({position: center, map: map});
         }
-
-        $(document).ready(function() {
-
-
-
-            $('.owl-carousel').owlCarousel({
-                loop:true,
-                margin:50,
-                responsiveClass:true,
-                responsive:{
-                    0:{
-                        items:1,
-                        nav:true,
-                        dots:false
-                    },
-                    600:{
-                        items:3,
-                        nav:false,
-                        dots:false
-                    },
-                    1000:{
-                        items:3,
-                        nav:true,
-                        loop:true,
-                        autoplay:true,
-                        dots:false
-                    }
-                }
-            });
-
-        });
     </script>
-
 </body>
 </html>
