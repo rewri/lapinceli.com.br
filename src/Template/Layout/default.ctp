@@ -26,8 +26,16 @@
     'font-awesome.min.js',
     'custom.js',
 )) ?>
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
 <?= $this->fetch('scriptBottom') ?>
-
+<script>
+    function initMap() {
+        var center = {lat: -22.880233, lng:  -48.443995};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 15, center: center}
+        );
+        var marker = new google.maps.Marker({position: center, map: map});
+    }
+</script>
 </body>
 </html>

@@ -14,4 +14,3 @@
 
 <?= $this->element('Home/block_services'); ?>
 
-<?= $this->element('Home/block_footer'); ?>

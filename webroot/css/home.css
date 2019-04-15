@@ -9,101 +9,6 @@ body {
     font-family: 'Hind', Arial, Helvetica, sans-serif;
 }
 
-/*** GERAL ***/
-.text-emphasis {
-    font-weight: 600;
-    color: #AC7834;
-}
-.btn-detail {
-    font-weight: 500;
-    font-size: 14px;
-    border-radius: 8px;
-    padding: 3px 8px;
-    text-decoration: none;
-    transition: background-color 0.5s ease;
-}
-.btn-ghost {
-    color: #AC7833;
-    border: 1px solid #AC7833;
-}
-.btn-ghost:hover {
-    color: #fff;
-    background-color: #AC7833;
-    border: 1px solid #AC7833;
-    text-decoration: none;
-    transition: background-color 0.5s ease;
-}
-.pixel-overlay {
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url('../img/bg-pattern.png');
-    opacity: .6;
-    z-index: 1;
-}
-.strike {
-    overflow: hidden;
-}
-.strike:before,
-.strike:after {
-    background-color: #AC7833;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-}
-.strike:before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-.strike:after {
-    left: 0.5em;
-    margin-right: -50%;
-}
-#map {
-    height: 350px;
-    width: 100%;
-}
-
-/*** HEADER HERO ***/
-.hero {
-    border-top: 2px solid #fff;
-    width: 100vw;
-    height: 500px;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero6.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.hero h1 {
-    font-size: 5em;
-    text-shadow: 1px 1px #221d1b;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-}
-.hero h2 {
-    font-size: 32px;
-    text-shadow: 1px 1px #221d1b;
-    font-family: 'Beauty', cursive;
-}
-@media screen and (max-width: 600px) {
-    .hero h2 {
-        padding: 0 25px;
-        line-height: 1.4em;
-    }
-}
-
 /*** BLOCK COMPANY ***/
 .block-company {
     background-color: #f1f1f1;
@@ -279,30 +184,6 @@ body {
 }
 .block-services .btn-detail {
     margin-top: 25px;
-}
-
-/*** BLOCK FOOTER ***/
-.block-footer {
-    background-color: #010;
-    border-bottom: 3px solid #CEA475;
-}
-.block-footer .map-div {
-    padding: 0;
-}
-.block-footer .address-div {
-    padding: 20px 0 0 25px;
-}
-.block-footer p {
-    padding-top: 20px;
-    font-size: 20px;
-    color: #fff;
-}
-.block-footer .address-div .social-icon {
-    font-size: 40px;
-    color: #fff;
-}
-.block-footer .address-div .social-icon:hover {
-    color: #AC7834;
 }
 
 

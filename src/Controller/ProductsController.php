@@ -19,5 +19,6 @@ class ProductsController extends AppController
     public function detail($slug = null, $id = null)
     {
         $this->set('title', $slug);
+        $this->set(compact('slug'));
     }
 }

@@ -24,20 +24,26 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <?php
-
-                    debug($this->request->params['controller']);
-
                     switch (strtolower($this->request->params['controller'])) {
                         case 'company' :
                             $activeHome = null;
                             $activeCompany = 'active';
-                            $activeProdiucts = 'active';
+                            $activeProducts = null;
+                            break;
+                        case 'products' :
+                            $activeHome = null;
+                            $activeCompany = null;
+                            $activeProducts = 'active';
+                            break;
+                        default :
+                            $activeHome = 'active';
+                            $activeCompany = null;
+                            $activeProducts = null;
                             break;
                     }
-
                 ?>
 
-                <li class="active">
+                <li class="<?php echo $activeHome; ?>">
                     <?php echo $this->Html->link('<span class="fa fa-home"></span>',
                         array(
                             'plugin' => null,
@@ -49,7 +55,8 @@
                             'escape' => false,
                         )
                     ); ?>
-                <li>
+                </li>
+                <li class="<?php echo $activeCompany; ?>">
                     <?php echo $this->Html->link('A empresa <i class="fas fa-angle-double-right text-12"></i>',
                         array(
                             'plugin' => null,
@@ -62,7 +69,7 @@
                         )
                     ); ?>
                 </li>
-                <li>
+                <li class="<?php echo $activeProducts; ?>">
                     <?php echo $this->Html->link('Produtos <i class="fas fa-angle-double-right text-12"></i>',
                         array(
                             'plugin' => null,
@@ -77,13 +84,9 @@
                 </li>
                 <li>
                     <?php echo $this->Html->link('Serviços <i class="fas fa-angle-double-right text-12"></i>',
+                        'javascript:;',
                         array(
-                            'plugin' => null,
-                            'controller' => 'company',
-                            'action' => 'services',
-                        ),
-                        array(
-                            'class' => '',
+                            'class' => 'goToServices hidden',
                             'escape' => false
                         )
                     ); ?>
