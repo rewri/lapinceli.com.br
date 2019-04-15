@@ -12,6 +12,7 @@
         'owl.theme.default.css'
     )) ?>
 
+    <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('home.css') ?>
 
     <?= $this->fetch('css') ?>
@@ -34,6 +35,17 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5LmOHyYJJrkvjJzvfaVqwdsHuhQagG_I&callback=initMap"></script>
 
     <script>
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                alert('ef');
+                x.className += " responsive";
+            } else {
+                alert('ewdf');
+                x.className = "topnav";
+            }
+        }
 
         function initMap() {
             var uluru = {lat: -22.884058, lng:  -48.444169};

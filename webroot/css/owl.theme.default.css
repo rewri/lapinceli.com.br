@@ -9,26 +9,29 @@
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
+    outline: none;
   -webkit-tap-highlight-color: transparent; }
   .owl-theme .owl-nav [class*='owl-'] {
     color: #FFF;
-    font-size: 44px !important;
-    margin: 25px;
+    font-size: 64px !important;
+    margin: 0 25px;
     padding: 4px 7px;
     background: #D6D6D6;
     display: inline-block;
     cursor: pointer;
-    border-radius: 3px; }
+    }
     .owl-theme .owl-nav [class*='owl-']:hover {
       background: #fff;
       color: #AB7C3B;
+     outline: none;
       text-decoration: none; }
   .owl-theme .owl-nav .disabled {
     opacity: 0.5;
+      outline: none;
     cursor: default; }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px; }
+  margin-top: 10px;outline: none; }
 
 .owl-theme .owl-dots {
   text-align: center;
@@ -45,6 +48,6 @@
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
-      border-radius: 30px; }
+       }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
