@@ -13,12 +13,46 @@
 
 <div class="container" style="padding-top: 30px">
     <div class="row">
-        <div class="col-md-12 col-xs-12" style="height: 1000px">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    Basic panel example
+        <div class="col-md-12 col-xs-12 text-center" style="min-height: 1000px">
+            <h2 class="strike" style="padding-bottom: 40px">Nossos produtos</h2>
+            <?php if (!empty($data)) : ?>
+                <div class="row" style="margin-bottom: 40px">
+                    <?php foreach ($data as $row) : ?>
+                        <div class="col-md-6 col-xs-12 text-center" style="margin-bottom: 30px">
+                            <div class="text-center" style="border: 1px solid #ccc; border-radius: 15px">
+                                <?= $this->Html->link(
+                                    $this->Html->image("products/{$row['image']}", array('height' => 300, 'width' => 300, 'alt' => $row['title'], 'title' => $row['title'])),
+                                    array(
+                                        'plugin' => null,
+                                        'controller' => 'products',
+                                        'action' => 'detail',
+                                        'slug' => strtolower(\Cake\Utility\Inflector::slug($row['title'], '-')),
+                                        'id' => $row['id'],
+                                    ),
+                                    array('escape' => false)
+                                ); ?>
+                                <p class="product-title"><?php echo $row['title']; ?>s</p>
+                                <p class="product-subtitle"><?php echo $row['subtitle']; ?></p>
+                                <p class="product-subtitle"><?php echo $row['info']; ?></p>
+                                <p class="product-subtitle"><?php echo $row['description']; ?></p>
+                                <p style="padding: 20px 0">
+                                    <?= $this->Html->link(
+                                        'Comprar',
+                                        array(
+                                            'plugin' => null,
+                                            'controller' => 'products',
+                                            'action' => 'detail',
+                                            'slug' => strtolower(\Cake\Utility\Inflector::slug($row['title'], '-')),
+                                            'id' => $row['id']
+                                        ),
+                                        array('class' => 'btn-detail btn-ghost', 'escape' => false)
+                                    ); ?>
+                                </p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
-            </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>

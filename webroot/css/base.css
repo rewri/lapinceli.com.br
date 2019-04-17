@@ -278,7 +278,7 @@ th {
 .hero {
     border-top: 2px solid #fff;
     width: 100vw;
-    height: 500px;
+    height: 350px;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -409,7 +409,7 @@ th {
     z-index: 1;
 }
 #map {
-    height: 350px;
+    height: 380px;
     width: 100%;
 }
 .strike {
@@ -434,5 +434,32 @@ th {
     margin-right: -50%;
 }
 
-
+/*** COMPANY ***/
+.hero-company {
+    border-top: 2px solid #fff;
+    width: 100vw;
+    height: 350px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero9.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero-company h1 {
+    font-size: 5em;
+    text-shadow: 1px 1px #221d1b;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero-company h2 {
+    font-size: 32px;
+    text-shadow: 1px 1px #221d1b;
+    font-family: 'Beauty', cursive;
+}
 

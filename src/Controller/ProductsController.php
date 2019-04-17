@@ -14,6 +14,8 @@ class ProductsController extends AppController
     public function index()
     {
         $this->set('title', 'Produtos');
+        $data = $this->Products->getAll()->toArray();
+        $this->set(compact('data'));
     }
 
     public function detail($slug = null, $id = null)
