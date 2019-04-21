@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
             </button>
                 <?= $this->Html->link(
-                    $this->Html->image('logo_test.png', array('height' => 48, 'class' => 'logo', 'alt' => 'Logotipo la Pinceli')),
+                    $this->Html->image('logo_lapinceli.png', array('height' => 48, 'class' => 'logo', 'alt' => 'Logotipo la Pinceli')),
                     array(
                         'plugin' => null,
                         'controller' => 'home',

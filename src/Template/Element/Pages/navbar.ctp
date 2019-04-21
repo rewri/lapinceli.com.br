@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse lp-navbar">
+<nav class="navbar lp-navbar">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
             </button>
                 <?= $this->Html->link(
-                    $this->Html->image('logo_test.png', array('height' => 48, 'class' => 'logo', 'alt' => 'Logotipo la Pinceli')),
+                    $this->Html->image('logo_lapinceli.png', array('height' => 48, 'class' => 'logo', 'alt' => 'Logotipo la Pinceli')),
                     array(
                         'plugin' => null,
                         'controller' => 'home',
@@ -24,7 +24,7 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <?php
-                    switch (strtolower($this->request->params['controller'])) {
+                    switch (strtolower($this->request->getParam('controller'))) {
                         case 'company' :
                             $activeHome = null;
                             $activeCompany = 'active';

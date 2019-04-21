@@ -47,12 +47,12 @@
                         dots:false
                     },
                     600:{
-                        items:3,
+                        items:4,
                         nav:false,
                         dots:false
                     },
                     1000:{
-                        items:3,
+                        items:4,
                         nav:true,
                         loop:true,
                         autoplay:true,

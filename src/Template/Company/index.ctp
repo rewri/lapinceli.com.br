@@ -6,7 +6,7 @@
 
 <section class="hero-company">
     <div class="hero-inner">
-        <h1>La Pinceli Professional</h1>
+        <h1 class="strike strike-white">La Pinceli Professional</h1>
         <h2>Conheça nossa história</h2>
     </div>
 </section>

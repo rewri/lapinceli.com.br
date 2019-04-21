@@ -26,13 +26,13 @@
                     <div class="col-md-12 col-xs-12">
                         <div class="form-group">
                             <label class="sr-only" for="name">Nome</label>
-                            <?= $this->Form->input('name', array('class' => 'form-control input-medium', 'placeholder' => 'Seu nome', 'label' => false, 'required' => true, 'id' => 'name')); ?>
+                            <?= $this->Form->control('name', array('class' => 'form-control input-medium', 'placeholder' => 'Seu nome', 'label' => false, 'required' => true, 'id' => 'name')); ?>
                         </div>
                     </div>
                     <div class="col-md-12 col-xs-12">
                         <div class="form-group">
                             <label class="sr-only" for="email">Email</label>
-                            <?= $this->Form->input('email', array('class' => 'form-control input-medium', 'placeholder' => 'Seu email', 'label' => false, 'required' => true, 'id' => 'email', 'type' => 'email')); ?>
+                            <?= $this->Form->control('email', array('class' => 'form-control input-medium', 'placeholder' => 'Seu email', 'label' => false, 'required' => true, 'id' => 'email', 'type' => 'email')); ?>
                         </div>
                     </div>
                 </div>

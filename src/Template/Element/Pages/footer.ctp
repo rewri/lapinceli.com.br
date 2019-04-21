@@ -5,7 +5,7 @@
         </div>
         <div class="col-md-5 col-xs-12 address-div">
             <?= $this->Html->link(
-                $this->Html->image('logo_test.png', array('width' => '350px')),
+                $this->Html->image('logo_lapinceli.png', array('width' => '300px')),
                 array(
                     'plugin' => null,
                     'controller' => 'home',
