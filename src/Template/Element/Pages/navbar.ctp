@@ -1,13 +1,11 @@
-<nav class="navbar lp-navbar">
+<nav class="navbar">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"  style="background-color: #C99B3E; padding: 7px 10px 2px 10px !important;">
+                <i class="fas fa-bars" style="color: #fff"></i>
             </button>
                 <?= $this->Html->link(
-                    $this->Html->image('logo_lapinceli.png', array('height' => 48, 'class' => 'logo', 'alt' => 'Logotipo la Pinceli')),
+                    $this->Html->image('logo_lapinceli.png', array('class' => 'logo', 'alt' => 'Logotipo la Pinceli')),
                     array(
                         'plugin' => null,
                         'controller' => 'home',
@@ -22,7 +20,6 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-
                 <?php
                     switch (strtolower($this->request->getParam('controller'))) {
                         case 'company' :
@@ -42,7 +39,6 @@
                             break;
                     }
                 ?>
-
                 <li class="<?php echo $activeHome; ?>">
                     <?php echo $this->Html->link('<span class="fa fa-home"></span>',
                         array(

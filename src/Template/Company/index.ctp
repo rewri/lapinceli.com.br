@@ -47,7 +47,9 @@
                 <span class="text-emphasis">vestibulum</span> magna. Sed elit mi, aliquam eu posuere vel, venenatis et urna.
                 Curabitur et ante non dui lacinia pulvinar non at erat. Sed bibendum est sit amet sem ultricies.
             </p>
-            <?= $this->Html->image('layout/produtos.jpg', array('width' => '90%', 'alt' => 'Imagem produtos', 'style' => 'padding: 30px 0 60px 0'))?>
+            <div class="text-center">
+                <?= $this->Html->image('layout/produtos.jpg', array('width' => '90%', 'alt' => 'Imagem produtos', 'style' => 'padding: 30px 0 60px 0'))?>
+            </div>
         </div>
     </div>
 </div>

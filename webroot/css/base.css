@@ -276,7 +276,7 @@ th {
 
 /*** HEADER HERO ***/
 .hero {
-    border-top: 2px solid #fff;
+    /*border-top: 2px solid #fff;*/
     width: 100vw;
     height: 350px;
     max-width: 100%;
@@ -287,7 +287,7 @@ th {
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero6.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -303,17 +303,22 @@ th {
     font-family: 'Beauty', cursive;
 }
 @media screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 3.3em;
+    }
     .hero h2 {
-        padding: 0 25px;
-        line-height: 1.4em;
+        font-size: 26px;
+        line-height: 1.6em;
     }
 }
 
 /*** NAVBAR ***/
 .navbar {
-    min-height: 80px;
+    height: 84px;
     border-radius: 0;
     margin-bottom: 0;
+    border: 0;
+    border-bottom: 2px solid #C99B3E;
 }
 .navbar-toggle {
     margin-top: 23px;
@@ -332,7 +337,14 @@ th {
     padding-right: 0;
 }
 .navbar-nav > li > a:hover {
-    color: #000 !important;
+    color: #C99B3E !important;
+    background-color: #FFFFFF;
+}
+.navbar .logo {
+    height: 80px;
+}
+.navbar-collapse {
+    background-color: #fff;
 }
 @media (min-width: 768px) {
     .navbar-nav > li > a {
@@ -347,6 +359,9 @@ th {
     }
     .navbar-nav > li > a {
         font-size: 16px;
+    }
+    .navbar .logo {
+        height: 42px;
     }
 }
 
@@ -439,7 +454,7 @@ th {
 }
 /*** COMPANY ***/
 .hero-company {
-    border-top: 2px solid #fff;
+    /*border-top: 2px solid #fff;*/
     width: 100vw;
     height: 350px;
     max-width: 100%;

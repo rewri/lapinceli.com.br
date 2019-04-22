@@ -119,7 +119,7 @@ class ProductsTable extends Table
 
         $query = $this->find('all')
             ->where(['enabled' => true])
-            ->order(['title' => 'asc']);
+            ->order(['rand()']);
 
 
         return $query->all();
