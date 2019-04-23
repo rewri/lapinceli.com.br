@@ -26,7 +26,7 @@
                     <div class="col-md-12 col-xs-12">
                         <div class="form-group">
                             <label class="sr-only" for="name">Nome</label>
-                            <?= $this->Form->control('name', array('class' => 'form-control input-medium', 'placeholder' => 'Seu nome', 'label' => false, 'required' => true, 'id' => 'name')); ?>
+                            <?= $this->Form->control('name', array('class' => 'form-control input-large', 'placeholder' => 'Seu nome', 'label' => false, 'required' => true, 'id' => 'name')); ?>
                         </div>
                     </div>
                     <div class="col-md-12 col-xs-12">
@@ -37,11 +37,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-xs-12">
+                    <div class="col-md-5 col-xs-12">
                         <?= $this->Form->submit('Cadastrar', array('class' => 'form-submit')) ; ?>
+                    </div>
+                    <div class="col-md-7 col-xs-12 text-right">
+                        <div class="g-recaptcha" data-sitekey="6Ldr2p8UAAAAANtsYeATr-TLY831Xr6G9X3FaFoN" style="display: inline-block;"></div>
                     </div>
                 </div>
             <?= $this->Form->end(); ?>
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         </div>
     </div>
 </div>

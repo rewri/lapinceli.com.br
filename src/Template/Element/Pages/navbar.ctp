@@ -19,7 +19,7 @@
                 ); ?>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" style="padding-top: 30px">
                 <?php
                     switch (strtolower($this->request->getParam('controller'))) {
                         case 'company' :

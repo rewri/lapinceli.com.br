@@ -33,7 +33,7 @@
 
     <?= $this->fetch('scriptBottom') ?>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxIWs74ryPOv3q19aGpoXIqfaFVQtIw_U&callback=initMap"></script>
     <script>
         $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
@@ -68,6 +68,15 @@
             );
             var marker = new google.maps.Marker({position: center, map: map});
         }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138969362-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138969362-1');
     </script>
 </body>
 </html>
