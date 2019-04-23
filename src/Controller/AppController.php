@@ -48,8 +48,8 @@ class AppController extends Controller
 
 
         $data = [
-            'defaultPageTitle' => 'La Pinceli Cosméticos',
-            'defaultPageDescription' => 'La Pinceli Cosméticos',
+            'defaultPageTitle' => 'La Pinceli Professional',
+            'defaultPageDescription' => 'La Pinceli Professional',
         ];
         $this->set($data);
 
