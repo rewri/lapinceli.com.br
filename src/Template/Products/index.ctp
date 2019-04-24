@@ -26,7 +26,6 @@
                                 <p class="product-title" style="font-size: 18px; font-weight: 800"><?php echo $row['title']; ?></p>
                                 <p class="product-subtitle" style="font-size: 16px; font-weight: 600"><?php echo $row['subtitle']; ?></p>
                                 <p class="product-subtitle" style="font-size: 16px; font-weight: 300"><?php echo $row['info']; ?></p>
-                                <p class="product-subtitle"><?php echo $row['description']; ?></p>
                                 <p style="padding-top: 10px">
                                     <?= $this->Html->link(
                                         'Ver + detalhes',

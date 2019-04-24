@@ -17,7 +17,6 @@
                             <p class="product-title"><?php echo $row['title']; ?></p>
                             <p class="product-subtitle"><?php echo $row['subtitle']; ?></p>
                             <p class="product-subtitle"><?php echo $row['info']; ?></p>
-                            <p class="product-subtitle"><?php echo $row['description']; ?></p>
                             <p style="padding-top: 10px">
                                 <?= $this->Html->link(
                                     'Ver + detalhes',

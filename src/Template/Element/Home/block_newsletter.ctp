@@ -21,7 +21,7 @@
         <div class="col-md-7 col-xs-12 form  gradient-bottom">
             <h3><i class="fas fa-paper-plane"></i> Newsletter</h3>
             <p>Cadastre-se para receber novidades e promoções exclusivas:</p>
-            <?= $this->Form->create('', array()); ?>
+            <?= $this->Form->create('Newsletter', array()); ?>
                 <div class="row">
                     <div class="col-md-12 col-xs-12">
                         <div class="form-group">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-5 col-xs-12">
-                        <?= $this->Form->submit('Cadastrar', array('class' => 'form-submit')) ; ?>
+                        <?= $this->Form->button('Cadastrar', array('class' => 'form-submit', 'id' => 'btn-submit-news')) ; ?>
                     </div>
                     <div class="col-md-7 col-xs-12 text-right">
                         <div class="g-recaptcha" data-sitekey="6Ldr2p8UAAAAANtsYeATr-TLY831Xr6G9X3FaFoN" style="display: inline-block;"></div>
