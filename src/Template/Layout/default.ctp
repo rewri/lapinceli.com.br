@@ -26,7 +26,7 @@
     'font-awesome.min.js',
     'custom.js',
 )) ?>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxIWs74ryPOv3q19aGpoXIqfaFVQtIw_U&callback=initMap"></script>
 <?= $this->fetch('scriptBottom') ?>
 <script>
     function initMap() {

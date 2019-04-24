@@ -7,16 +7,32 @@
 <section class="hero">
     <div class="hero-inner">
         <h1>La Pinceli Professional</h1>
-        <h2><?php echo $slug; ?></h2>
+        <h2><?php echo $data[0]['title']; ?></h2>
     </div>
 </section>
 
 <div class="container" style="padding-top: 30px">
     <div class="row">
-        <div class="col-md-12 col-xs-12" style="height: 1000px">
+        <div class="col-md-12 col-xs-12" style="margin-bottom: 50px">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <?php echo $slug; ?>
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 text-center">
+                            <h1><?php echo $data[0]['title']; ?></h1>
+                            <h2><?php echo $data[0]['subtitle']; ?></h2>
+                            <p><?php echo $data[0]['info']; ?></p>
+                            <p><?php echo $data[0]['description']; ?></p>
+                            <?php echo $this->Html->image("products/{$data[0]['image']}"); ?>
+                            <p style="padding-top: 30px">
+                                <?php $link = array($data[0]['sell_link']); ?>
+                                <?= $this->Html->link(
+                                    'Comprar <span class="fas fa-shopping-cart" style="font-size: 10px"></span>',
+                                    $link,
+                                    array('class' => 'btn-detail btn-ghost', 'escape' => false, 'style' => 'display: inline-block; width: 80%; padding: 10px 0; font-size: 22px; text-transform: uppercase')
+                                ); ?>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

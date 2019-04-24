@@ -32,15 +32,10 @@
                                 ); ?>
                             </p>
                             <p style="padding-top: 10px">
+                                <?php $link = array($row['sell_link']); ?>
                                 <?= $this->Html->link(
                                     'Comprar <span class="fas fa-shopping-cart" style="font-size: 10px"></span>',
-                                    array(
-                                        'plugin' => null,
-                                        'controller' => 'products',
-                                        'action' => 'detail',
-                                        'slug' => strtolower(\Cake\Utility\Text::slug($row['title'], '-')),
-                                        'id' => $row['id']
-                                    ),
+                                    $link,
                                     array('class' => 'btn-detail btn-ghost', 'escape' => false, 'style' => 'display: block; width: 100%; text-transform: uppercase')
                                 ); ?>
                             </p>

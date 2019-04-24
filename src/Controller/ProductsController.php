@@ -20,7 +20,8 @@ class ProductsController extends AppController
 
     public function detail($slug = null, $id = null)
     {
-        $this->set('title', $slug);
-        $this->set(compact('slug'));
+        $data = $this->Products->findById($id)->toArray();
+        $this->set('title', 'produto');
+        $this->set(compact('data'));
     }
 }

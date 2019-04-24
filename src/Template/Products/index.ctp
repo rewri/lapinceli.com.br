@@ -18,26 +18,18 @@
             <?php if (!empty($data)) : ?>
                 <div class="row" style="margin-bottom: 40px">
                     <?php foreach ($data as $row) : ?>
-                        <div class="col-md-6 col-xs-12 text-center" style="margin-bottom: 30px">
-                            <div class="text-center" style="border: 1px solid #ccc; border-radius: 15px; padding: 30px">
-                                <?= $this->Html->link(
-                                    $this->Html->image("products/{$row['image']}", array('height' => $row['image_height'], 'alt' => $row['title'], 'title' => $row['title'])),
-                                    array(
-                                        'plugin' => null,
-                                        'controller' => 'products',
-                                        'action' => 'detail',
-                                        'slug' => strtolower(\Cake\Utility\Text::slug($row['title'], '-')),
-                                        'id' => $row['id'],
-                                    ),
-                                    array('escape' => false)
-                                ); ?>
-                                <p class="product-title"><?php echo $row['title']; ?></p>
-                                <p class="product-subtitle"><?php echo $row['subtitle']; ?></p>
-                                <p class="product-subtitle"><?php echo $row['info']; ?></p>
+                        <div class="col-md-6 col-xs-12 text-center" style="margin-bottom: 60px">
+
+                            <div class="text-center product-box" style="border: 1px solid #ccc; padding: 20px 0; border-radius: 10px">
+                                <?php $image = "img/products/{$row['image']}"; ?>
+                                <div class="product-image" style="background-image: url('<?php echo $image ?>'); min-height: 350px; background-repeat: no-repeat; background-position: center center"></div>
+                                <p class="product-title" style="font-size: 18px; font-weight: 800"><?php echo $row['title']; ?></p>
+                                <p class="product-subtitle" style="font-size: 16px; font-weight: 600"><?php echo $row['subtitle']; ?></p>
+                                <p class="product-subtitle" style="font-size: 16px; font-weight: 300"><?php echo $row['info']; ?></p>
                                 <p class="product-subtitle"><?php echo $row['description']; ?></p>
-                                <p style="padding: 20px 0 0 0">
+                                <p style="padding-top: 10px">
                                     <?= $this->Html->link(
-                                        'Comprar',
+                                        'Ver + detalhes',
                                         array(
                                             'plugin' => null,
                                             'controller' => 'products',
@@ -45,10 +37,20 @@
                                             'slug' => strtolower(\Cake\Utility\Text::slug($row['title'], '-')),
                                             'id' => $row['id']
                                         ),
-                                        array('class' => 'btn-detail btn-ghost', 'escape' => false, 'style' => 'display: block; width: 100%; text-transform: uppercase')
+                                        array('class' => 'btn-detail btn-ghost', 'escape' => false, 'style' => 'display: inline-block; width: 70%; text-transform: uppercase')
+                                    ); ?>
+                                </p>
+                                <p style="padding-top: 10px; text-align: center">
+                                    <?php $link = array($row['sell_link']); ?>
+                                    <?= $this->Html->link(
+                                        'Comprar <span class="fas fa-shopping-cart" style="font-size: 10px"></span>',
+                                        $link,
+                                        array('class' => 'btn-detail btn-ghost', 'escape' => false, 'style' => 'display: inline-block; width: 70%; text-transform: uppercase')
                                     ); ?>
                                 </p>
                             </div>
+
+
                         </div>
                     <?php endforeach; ?>
                 </div>
