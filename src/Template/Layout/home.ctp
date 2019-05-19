@@ -60,7 +60,47 @@
                     }
                 }
             });
+
+
+            const newsForm = $('#save-news');
+            const newsBtn = $('#btn-submit-news');
+
+            function isCaptchaChecked() {
+                return grecaptcha && grecaptcha.getResponse().length !== 0;
+            }
+
+            newsBtn.bind('click', function(e) {
+                e.preventDefault();
+                newsBtn.attr('disabled', true).text('Enviando...');
+
+                if (isCaptchaChecked()) {
+                    const inputName = $('#name');
+                    const inputEmail = $('#email');
+                    const url = newsForm.attr('action');
+                    if (inputName.length !== 0 && inputEmail.length !== 0) {
+                        $.ajax({
+                            type: "POST",
+                            url: url,
+                            data: newsForm.serialize(),
+                            success: function(data)
+                            {
+                                newsBtn.hide();
+                                $('#recaptcha').hide();
+                                alert('Contato cadastrado com sucesso!');
+                            },
+                            error: function(err) {
+                                console.log(err);
+                            }
+                        });
+                    } else {
+                        alert('Preencha todos os campos obrigatórios.');
+                    }
+                } else {
+                    alert('Marque a opção "Não sou um robô."');
+                }
+            });
         });
+
         function initMap() {
             var center = {lat: -22.880233, lng:  -48.443995};
             var map = new google.maps.Map(
