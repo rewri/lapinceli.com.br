@@ -4,6 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 use App\Model\Entity\News;
 use Cake\ORM\TableRegistry;
+use Cake\Mailer\Email;
 
 /**
  * Home Controller
@@ -33,6 +34,23 @@ class HomeController extends AppController
             $articles = TableRegistry::getTableLocator()->get('News');
             $article = $articles->newEntity($data);
             $articles->save($article);
+
+            /*
+            $now = date('d/m/y H:i:s');
+            $msg = "
+                <h1>Contato La Pinceli - Quero ser um fornecedor</h1>
+                <br>
+                <p>Nome: {$data['name']}</p>
+                <p>Email: {$data['email']}</p>
+                <p>Data: {$now}</p>
+            ";
+            $email = new Email('default');
+            $email->setFrom(['contato@lapinceli.com.br' => 'Contato la Pinceli'])
+                ->setTo('rkfumes@gmail.com.com')
+                ->setSubject('Quero ser um fornecedor')
+                ->send($msg);
+            */
+
         }
     }
 }

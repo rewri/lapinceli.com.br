@@ -26,16 +26,25 @@
                             $activeHome = null;
                             $activeCompany = 'active';
                             $activeProducts = null;
+                            $activeTips = null;
                             break;
                         case 'products' :
                             $activeHome = null;
                             $activeCompany = null;
                             $activeProducts = 'active';
+                            $activeTips = null;
+                            break;
+                        case 'tips' :
+                            $activeHome = null;
+                            $activeCompany = null;
+                            $activeProducts = null;
+                            $activeTips = 'active';
                             break;
                         default :
                             $activeHome = 'active';
                             $activeCompany = null;
                             $activeProducts = null;
+                            $activeTips = null;
                             break;
                     }
                 ?>
@@ -78,11 +87,15 @@
                         )
                     ); ?>
                 </li>
-                <li>
-                    <?php echo $this->Html->link('Serviços <i class="fas fa-angle-double-right text-12"></i>',
-                        'javascript:;',
+                <li class="<?php echo $activeTips; ?>">
+                    <?php echo $this->Html->link('Dicas e Tutoriais <i class="fas fa-angle-double-right text-12"></i>',
                         array(
-                            'class' => 'goToServices hidden',
+                            'plugin' => null,
+                            'controller' => 'tips',
+                            'action' => 'index',
+                        ),
+                        array(
+                            'class' => '',
                             'escape' => false
                         )
                     ); ?>

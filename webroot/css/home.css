@@ -4,6 +4,10 @@
     font-family: 'Beauty';
     src: url('../font/Cassandra.ttf');
 }
+@font-face {
+    font-family: 'Bebas';
+    src: url('../font/BebasNeue-Regular.woff2');
+}
 
 body {
     font-family: 'Hind', Arial, Helvetica, sans-serif;
@@ -39,7 +43,7 @@ body {
     padding: 35px 0 15px 0;
 }
 .block-products-slider {
-    min-height: 150px;
+    min-height: 10px;
 }
 .block-products .product-title {
     font-weight: 700;
@@ -66,7 +70,7 @@ body {
 }
 @media screen and (max-width: 600px) {
     .block-products .product-image {
-        height: 280px;
+        height: 265px;
         background-size: 80% auto;
     }
     .block-products .product-box {

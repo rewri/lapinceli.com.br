@@ -61,6 +61,19 @@
                     ); ?>
                 </li>
                 <li>
+                    <?php echo $this->Html->link('Dicas e Tutoriais <i class="fas fa-angle-double-right text-12"></i>',
+                        array(
+                            'plugin' => null,
+                            'controller' => 'tips',
+                            'action' => 'index',
+                        ),
+                        array(
+                            'class' => '',
+                            'escape' => false
+                        )
+                    ); ?>
+                </li>
+                <li>
                     <?php echo $this->Html->link('Serviços <i class="fas fa-angle-double-right text-12"></i>',
                         array(
                             'plugin' => null,

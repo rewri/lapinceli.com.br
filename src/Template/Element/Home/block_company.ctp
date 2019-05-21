@@ -3,10 +3,9 @@
         <div class="row">
             <div class="col-md-12 col-xs-12">
                 <h1 class="strike"><span class="text-emphasis">&bull;</span> La Pinceli Professional</h1>
-                <h3>Conquiste cabelos <span class="text-emphasis">saudáveis, fortes, com brilho e maciez</span>!</h3>
                 <div class="row">
                     <div class="col-md-9 col-xs-12">
-                        <p>
+                        <p style="margin-top: 30px;">
                             Vivamus vestibulum accumsan augue, vitae congue massa semper sit amet. Vestibulum sit amet laoreet tortor, in rutrum tortor. Cras in nunc vitae mauris ornare ullamcorper
                             in eget nisl. <span class="text-emphasis">Quisque commodo</span> accumsan quam, id rutrum sem. Duis velit leo, molestie eu eleifend eget, convallis eu arcu. Nullam pretium nibh sed metus dictum.
                         </p>

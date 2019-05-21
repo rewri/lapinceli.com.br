@@ -27,6 +27,8 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     $routes->connect('/produto/:slug/:id', ['controller' => 'products', 'action' => 'detail'], ['pass' => ['slug', 'id']]);
 
+    $routes->connect('/dicas', ['controller' => 'tips', 'action' => 'index']);
+
     $routes->fallbacks(DashedRoute::class);
 });
 

@@ -72,12 +72,11 @@
             newsBtn.bind('click', function(e) {
                 e.preventDefault();
                 newsBtn.attr('disabled', true).text('Enviando...');
-
                 if (isCaptchaChecked()) {
                     const inputName = $('#name');
                     const inputEmail = $('#email');
                     const url = newsForm.attr('action');
-                    if (inputName.length !== 0 && inputEmail.length !== 0) {
+                    if (inputName.val() !== '' && inputEmail.val() !== '') {
                         $.ajax({
                             type: "POST",
                             url: url,
@@ -86,17 +85,19 @@
                             {
                                 newsBtn.hide();
                                 $('#recaptcha').hide();
-                                alert('Contato cadastrado com sucesso!');
+                                alert('Contato cadastrado com sucesso! Em breve entraremos em contato!');
                             },
                             error: function(err) {
                                 console.log(err);
                             }
                         });
                     } else {
-                        alert('Preencha todos os campos obrigatórios.');
+                        alert('Preencha todos os campos.');
+                        newsBtn.removeAttr('disabled').text('Enviar');
                     }
                 } else {
                     alert('Marque a opção "Não sou um robô."');
+                    newsBtn.removeAttr('disabled').text('Enviar');
                 }
             });
         });

@@ -4,6 +4,10 @@
     font-family: 'Beauty';
     src: url('../font/Cassandra.ttf');
 }
+@font-face {
+    font-family: 'Bebas';
+    src: url('../font/BebasNeue-Regular.woff2');
+}
 
 html {
     -ms-text-size-adjust: 100%;
@@ -278,16 +282,16 @@ th {
 .hero {
     /*border-top: 2px solid #fff;*/
     width: 100vw;
-    height: 350px;
+    height: 300px;
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero6.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero_hair.jpg');
     background-size: cover;
-    background-position: center top;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -326,8 +330,10 @@ th {
 }
 .navbar-nav > li > a {
     padding-right: 45px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     color: #050505 !important;
+    font-family: 'Bebas', Arial, Helvetica, sans-serif;
 }
 .navbar-nav > li:first-child > a {
     padding-right: 15px;
@@ -377,16 +383,16 @@ th {
     padding: 0;
 }
 .block-footer .address-div {
-    padding: 20px 0 0 25px;
+    padding: 20px 0 0 20px;
 }
 .block-footer p {
-    padding: 30px 0 0 40px;
-    font-size: 18px;
+    padding: 10px 0 0 10px;
+    font-size: 16px;
     font-weight: 600;
     color: #fff;
 }
 .block-footer .address-div .social-icon {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
     color: #fff;
 }
@@ -429,7 +435,7 @@ th {
     z-index: 1;
 }
 #map {
-    height: 450px;
+    height: 300px;
     width: 100%;
 }
 .strike {
@@ -461,14 +467,14 @@ th {
 .hero-company {
     /*border-top: 2px solid #fff;*/
     width: 100vw;
-    height: 350px;
+    height: 300px;
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero9.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero_hair.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
