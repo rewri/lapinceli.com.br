@@ -1,7 +1,7 @@
 <div class="container block-products">
     <div class="row">
         <div class="col-md-12 col-xs-12 text-center">
-            <h2 class="strike" style="margin-bottom: 35px;">Nossos produtos</h2>
+            <h2 class="strike" style="margin-bottom: 35px; text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif">Nossos produtos</h2>
         </div>
     </div>
     <div class="row block-products-slider">
@@ -14,7 +14,7 @@
                         <div class="text-center product-box" style="height: 400px;">
                             <?php $image = "img/products/{$row['image']}"; ?>
                             <div class="product-image" style="background-image: url('<?php echo $image ?>');"></div>
-                            <p class="product-title"><?php echo $row['title']; ?></p>
+                            <p class="product-title" style="font-family: 'Bebas', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 400"><?php echo $row['title']; ?></p>
                             <p class="product-subtitle"><?php echo $row['subtitle']; ?></p>
                             <p class="product-subtitle"><?php echo $row['info']; ?></p>
                             <?php if ($row['id'] == 6) : ?>

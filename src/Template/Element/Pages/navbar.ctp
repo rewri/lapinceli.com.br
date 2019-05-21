@@ -87,7 +87,7 @@
                         )
                     ); ?>
                 </li>
-                <li class="<?php echo $activeTips; ?>">
+                <li class="<?php echo $activeTips; ?> hidden">
                     <?php echo $this->Html->link('Dicas e Tutoriais <i class="fas fa-angle-double-right text-12"></i>',
                         array(
                             'plugin' => null,

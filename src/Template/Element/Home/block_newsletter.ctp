@@ -3,7 +3,7 @@
         <div class="col-md-5 col-xs-12 hero-image-bottom-div">
             <div class="hero-image-bottom">
                 <div class="hero-bottom-text">
-                    <h2>curta nossa página no facebook </h2>
+                    <h2 style="text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif">curta nossa página no facebook </h2>
                     <h2>
                         <?= $this->Html->link('<i class="fab fa-facebook" style="font-size: 30px"></i> /lapinceli',
                             'https://www.facebook.com/lapinceli/',
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="col-md-7 col-xs-12 form gradient-bottom">
-            <h3><i class="fas fa-paper-plane"></i> Seja um distribuidor</h3>
+            <h3 style="text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif"><i class="fas fa-paper-plane"></i> Seja um distribuidor</h3>
             <p>Cadastre-se e seja um distribuidor exclusivo La Pinceli:</p>
             <?= $this->Form->create('Newsletter', array('url' => array('plugin' => null, 'controller' => 'home', 'action' => 'saveNews'), 'id' => 'save-news')); ?>
                 <div class="row">
@@ -29,10 +29,16 @@
                             <?= $this->Form->control('name', array('class' => 'form-control input-large', 'placeholder' => 'Seu nome', 'label' => false, 'required' => true, 'id' => 'name')); ?>
                         </div>
                     </div>
-                    <div class="col-md-12 col-xs-12">
+                    <div class="col-md-6 col-xs-12">
                         <div class="form-group">
                             <label class="sr-only" for="email">Email</label>
                             <?= $this->Form->control('email', array('class' => 'form-control input-medium', 'placeholder' => 'Seu email', 'label' => false, 'required' => true, 'id' => 'email', 'type' => 'email')); ?>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="sr-only" for="phone">Telefone</label>
+                            <?= $this->Form->control('phone', array('class' => 'form-control input-medium', 'placeholder' => 'Seu telefone', 'label' => false, 'required' => true, 'id' => 'phone', 'type' => 'text')); ?>
                         </div>
                     </div>
                 </div>

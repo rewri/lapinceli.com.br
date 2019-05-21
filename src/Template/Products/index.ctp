@@ -6,15 +6,15 @@
 
 <section class="hero">
     <div class="hero-inner">
-        <h1 class="strike strike-white">La Pinceli Professional</h1>
-        <h2>Conheça todos nossos produtos</h2>
+        <h1 class="strike strike-white" style="text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif">La Pinceli Professional</h1>
+        <h2 style="text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif">Conheça todos nossos produtos</h2>
     </div>
 </section>
 
 <div class="container" style="padding-top: 30px">
     <div class="row">
         <div class="col-md-12 col-xs-12 text-center" style="min-height: 1000px">
-            <h2 class="strike" style="padding-bottom: 40px">Nossos produtos</h2>
+            <h2 class="strike" style="padding-bottom: 40px; text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif">Nossos produtos</h2>
             <?php if (!empty($data)) : ?>
                 <div class="row" style="margin-bottom: 40px">
                     <?php foreach ($data as $row) : ?>
@@ -23,7 +23,7 @@
                             <div class="text-center product-box" style="border: 1px solid #ccc; padding: 20px 0; border-radius: 10px; height: 560px">
                                 <?php $image = "img/products/{$row['image']}"; ?>
                                 <div class="product-image" style="background-image: url('<?php echo $image ?>'); min-height: 350px; background-repeat: no-repeat; background-position: center center"></div>
-                                <p class="product-title" style="font-size: 18px; font-weight: 800; margin-top: 15px;"><?php echo $row['title']; ?></p>
+                                <p class="product-title" style="font-size: 26px; font-weight: 400; margin-top: 15px; font-family: 'Bebas', Arial, Helvetica, sans-serif"><?php echo $row['title']; ?></p>
                                 <p class="product-subtitle" style="font-size: 16px; font-weight: 600"><?php echo $row['subtitle']; ?></p>
                                 <p class="product-subtitle" style="font-size: 16px; font-weight: 300"><?php echo $row['info']; ?></p>
                                 <?php if ($row['id'] == 6) : ?>

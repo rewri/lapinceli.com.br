@@ -75,8 +75,9 @@
                 if (isCaptchaChecked()) {
                     const inputName = $('#name');
                     const inputEmail = $('#email');
+                    const inputPhone = $('#phone');
                     const url = newsForm.attr('action');
-                    if (inputName.val() !== '' && inputEmail.val() !== '') {
+                    if (inputName.val() !== '' && inputEmail.val() !== ''&& inputPhone.val() !== '') {
                         $.ajax({
                             type: "POST",
                             url: url,

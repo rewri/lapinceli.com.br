@@ -70,7 +70,7 @@ body {
 }
 @media screen and (max-width: 600px) {
     .block-products .product-image {
-        height: 265px;
+        height: 250px;
         background-size: 80% auto;
     }
     .block-products .product-box {
@@ -110,9 +110,9 @@ body {
     padding: 0;
 }
 .hero-image-bottom {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/layout/banner.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/layout/banner_lateral_03.jpg");
     height: 340px;
-    background-position: center top;
+    background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

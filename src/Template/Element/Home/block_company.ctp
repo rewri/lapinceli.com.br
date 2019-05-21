@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <h1 class="strike"><span class="text-emphasis">&bull;</span> La Pinceli Professional</h1>
+                <h1 class="strike" style="text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif"><span class="text-emphasis">&bull;</span> La Pinceli Professional</h1>
                 <div class="row">
                     <div class="col-md-9 col-xs-12">
                         <p style="margin-top: 30px;">

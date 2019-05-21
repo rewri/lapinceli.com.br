@@ -12,5 +12,11 @@
 
 <?= $this->element('Home/block_newsletter'); ?>
 
+<div class="col-md-12 col-xs-12" style="height: 60px; background-color: #fff">
+    &nbsp;
+</div>
+
+<?php /* ?>
 <?= $this->element('Home/block_services'); ?>
+<?php */ ?>
 

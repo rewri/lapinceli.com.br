@@ -9,6 +9,7 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $name
  * @property string $email
+ * @property string $phone
  * @property int $enabled
  * @property \Cake\I18n\FrozenTime $created
  */
@@ -27,6 +28,7 @@ class News extends Entity
         'name' => true,
         'email' => true,
         'enabled' => true,
+        'phone' => true,
         'created' => true
     ];
 }
