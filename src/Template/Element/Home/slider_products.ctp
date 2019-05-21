@@ -19,12 +19,7 @@
                             <p class="product-subtitle"><?php echo $row['info']; ?></p>
                             <?php if ($row['id'] == 6) : ?>
                                 <p style="padding-top: 10px">
-                                    <?php $link = array($row['sell_link']); ?>
-                                    <?= $this->Html->link(
-                                        'COMPRAR',
-                                        $link,
-                                        array('class' => 'btn-detail btn-ghost', 'escape' => false, 'style' => 'display: block; width: 100%; text-transform: uppercase; background-color: #AC7833; color: #fff')
-                                    ); ?>
+                                    <!-- INICIO DO BOTAO PAGSEGURO --><a href="https://pag.ae/7UVQfDTur/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/160x20-pagar-preto.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a><!-- FIM DO BOTAO PAGSEGURO -->
                                 </p>
                             <?php endif; ?>
                             <p style="padding-top: 10px">

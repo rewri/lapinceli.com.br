@@ -30,12 +30,7 @@
                             <p class="text-left" style="padding: 30px; font-size: 24px; font-weight: 300; line-height: 1.7em"><?php echo nl2br($data[0]['description']); ?></p>
                             <?php if ($data[0]['id'] == 6) : ?>
                             <p style="padding-top: 30px">
-                                <?php $link = array($data[0]['sell_link']); ?>
-                                <?= $this->Html->link(
-                                    'Comprar',
-                                    $link,
-                                    array('class' => 'btn-detail btn-ghost', 'escape' => false, 'style' => 'display: inline-block; width: 100%; padding: 10px 0; font-size: 22px; text-transform: uppercase')
-                                ); ?>
+                                <!-- INICIO DO BOTAO PAGSEGURO --><a href="https://pag.ae/7UVQfDTur/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar-preto.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a><!-- FIM DO BOTAO PAGSEGURO -->
                             </p>
                             <?php endif; ?>
                         </div>
