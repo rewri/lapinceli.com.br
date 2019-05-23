@@ -5,17 +5,18 @@
                 <h1 class="strike" style="text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif"><span class="text-emphasis">&bull;</span> La Pinceli Professional</h1>
                 <div class="row">
                     <div class="col-md-9 col-xs-12">
-                        <p style="margin-top: 30px;">
-                            Vivamus vestibulum accumsan augue, vitae congue massa semper sit amet. Vestibulum sit amet laoreet tortor, in rutrum tortor. Cras in nunc vitae mauris ornare ullamcorper
-                            in eget nisl. <span class="text-emphasis">Quisque commodo</span> accumsan quam, id rutrum sem. Duis velit leo, molestie eu eleifend eget, convallis eu arcu. Nullam pretium nibh sed metus dictum.
+                        <p style="margin-top: 20px; font-size: 16px">
+                            Há mais de 14 anos, nossa equipe vem estudando os melhores produtos e agentes ao que se refere à cabelos.
+                            <br>
+                            Com o compromisso de satisfazer os consumidores, desenvolvemos uma <span class="text-emphasis">aliança entre bem estar, saúde e ciência</span>.
+                            <br>
+                            Cada produto e cada avanço foram trazidos para revolucionar os tratamentos capilares, gerado por pessoas que buscam fazer a diferença na área da cosmetologia.
+                            <br>
                         </p>
-                        <p>
-                            Quis venenatis neque volutpat. Morbi in velit quis enim feugiat vulputate non id enim. Proin condimentum augue ut lectus tristique, ac imperdiet lectus efficitur.
-                            Vivamus commodo mattis ligula, vel vehicula <span class="text-emphasis">odio porta et</span>. Nulla eu erat commodo, rutrum purus in,
-                            <span class="text-emphasis">vestibulum</span> magna. Sed elit mi, aliquam eu posuere vel, venenatis et urna.
-                            Curabitur et ante non dui lacinia pulvinar non at erat. Sed bibendum est sit amet sem ultricies.
+                        <p style="margin-top: 10px; font-size: 16px; font-weight: 600">
+                            Assim chegamos ao nosso resultado final e é com grande alegria que apresentamos a vocês a primeira linha de produtos <span class="text-emphasis">LA PINCELI PROFESSIONAL</span>.
                         </p>
-                        <p>
+                        <p style="padding-top: 20px">
                             <?= $this->Html->link(
                                 'Veja mais',
                                 array(

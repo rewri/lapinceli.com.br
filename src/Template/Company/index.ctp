@@ -15,35 +15,16 @@
     <div class="row">
         <div class="col-md-12 col-xs-12 text-18" style="min-height: 1000px; padding-top: 30px">
             <h1 class="strike" style="text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif"><span class="text-emphasis">&bull;</span> La Pinceli Professional</h1>
-            <p style="padding-top: 40px;">
-                Vivamus vestibulum accumsan augue, vitae congue massa semper sit amet. Vestibulum sit amet laoreet tortor, in rutrum tortor. Cras in nunc vitae mauris ornare ullamcorper
-                in eget nisl. <span class="text-emphasis">Quisque commodo</span> accumsan quam, id rutrum sem. Duis velit leo, molestie eu eleifend eget, convallis eu arcu. Nullam pretium nibh sed metus dictum.
+            <p style="margin-top: 30px; font-size: 18px">
+                Há mais de 14 anos, nossa equipe vem estudando os melhores produtos e agentes ao que se refere à cabelos.
+                <br>
+                Com o compromisso de satisfazer os consumidores, desenvolvemos uma <span class="text-emphasis">aliança entre bem estar, saúde e ciência</span>.
+                <br>
+                Cada produto e cada avanço foram trazidos para revolucionar os tratamentos capilares, gerado por pessoas que buscam fazer a diferença na área da cosmetologia.
+                <br>
             </p>
-            <p>
-                Quis venenatis neque volutpat. Morbi in velit quis enim feugiat vulputate non id enim. Proin condimentum augue ut lectus tristique, ac imperdiet lectus efficitur.
-                Vivamus commodo mattis ligula, vel vehicula <span class="text-emphasis">odio porta et</span>. Nulla eu erat commodo, rutrum purus in,
-                <span class="text-emphasis">vestibulum</span> magna. Sed elit mi, aliquam eu posuere vel, venenatis et urna.
-                Curabitur et ante non dui lacinia pulvinar non at erat. Sed bibendum est sit amet sem ultricies.
-            </p>
-            <p>
-                Vivamus vestibulum accumsan augue, vitae congue massa semper sit amet. Vestibulum sit amet laoreet tortor, in rutrum tortor. Cras in nunc vitae mauris ornare ullamcorper
-                in eget nisl. <span class="text-emphasis">Quisque commodo</span> accumsan quam, id rutrum sem. Duis velit leo, molestie eu eleifend eget, convallis eu arcu. Nullam pretium nibh sed metus dictum.
-            </p>
-            <p>
-                Quis venenatis neque volutpat. Morbi in velit quis enim feugiat vulputate non id enim. Proin condimentum augue ut lectus tristique, ac imperdiet lectus efficitur.
-                Vivamus commodo mattis ligula, vel vehicula <span class="text-emphasis">odio porta et</span>. Nulla eu erat commodo, rutrum purus in,
-                <span class="text-emphasis">vestibulum</span> magna. Sed elit mi, aliquam eu posuere vel, venenatis et urna.
-                Curabitur et ante non dui lacinia pulvinar non at erat. Sed bibendum est sit amet sem ultricies.
-            </p>
-            <p>
-                Vivamus vestibulum accumsan augue, vitae congue massa semper sit amet. Vestibulum sit amet laoreet tortor, in rutrum tortor. Cras in nunc vitae mauris ornare ullamcorper
-                in eget nisl. <span class="text-emphasis">Quisque commodo</span> accumsan quam, id rutrum sem. Duis velit leo, molestie eu eleifend eget, convallis eu arcu. Nullam pretium nibh sed metus dictum.
-            </p>
-            <p>
-                Quis venenatis neque volutpat. Morbi in velit quis enim feugiat vulputate non id enim. Proin condimentum augue ut lectus tristique, ac imperdiet lectus efficitur.
-                Vivamus commodo mattis ligula, vel vehicula <span class="text-emphasis">odio porta et</span>. Nulla eu erat commodo, rutrum purus in,
-                <span class="text-emphasis">vestibulum</span> magna. Sed elit mi, aliquam eu posuere vel, venenatis et urna.
-                Curabitur et ante non dui lacinia pulvinar non at erat. Sed bibendum est sit amet sem ultricies.
+            <p style="margin-top: 20px; font-size: 18px; font-weight: 600">
+                Assim chegamos ao nosso resultado final e é com grande alegria que apresentamos a vocês a primeira linha de produtos <span class="text-emphasis">LA PINCELI PROFESSIONAL</span>.
             </p>
             <div class="text-center">
                 <?= $this->Html->image('layout/produtos.jpg', array('width' => '90%', 'alt' => 'Imagem produtos', 'style' => 'padding: 30px 0 60px 0'))?>
