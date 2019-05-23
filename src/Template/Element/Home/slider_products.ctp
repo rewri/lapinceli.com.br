@@ -18,9 +18,15 @@
                             <p class="product-subtitle"><?php echo $row['subtitle']; ?></p>
                             <p class="product-subtitle"><?php echo $row['info']; ?></p>
                             <?php if ($row['id'] == 6) : ?>
-                                <p style="padding-top: 10px">
-                                    <!-- INICIO DO BOTAO PAGSEGURO --><a href="https://pag.ae/7UVQfDTur/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/160x20-pagar-preto.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a><!-- FIM DO BOTAO PAGSEGURO -->
-                                </p>
+                                <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                                <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+                                    <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                                    <input type="hidden" name="code" value="3B6DC486FBFB0B3EE4A6BF8D30EC8F23" />
+                                    <input type="hidden" name="iot" value="button" />
+                                    <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-preto-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                                </form>
+                                <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+                                <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                             <?php endif; ?>
                             <p style="padding-top: 10px">
                                 <?= $this->Html->link(

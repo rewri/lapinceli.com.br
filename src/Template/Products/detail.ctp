@@ -29,9 +29,15 @@
                             <?php echo $this->Html->image("products/{$data[0]['image']}"); ?>
                             <p class="text-left" style="padding: 30px; font-size: 24px; font-weight: 300; line-height: 1.7em"><?php echo nl2br($data[0]['description']); ?></p>
                             <?php if ($data[0]['id'] == 6) : ?>
-                            <p style="padding-top: 30px">
-                                <!-- INICIO DO BOTAO PAGSEGURO --><a href="https://pag.ae/7UVQfDTur/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar-preto.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a><!-- FIM DO BOTAO PAGSEGURO -->
-                            </p>
+                                <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                                <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+                                    <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                                    <input type="hidden" name="code" value="3B6DC486FBFB0B3EE4A6BF8D30EC8F23" />
+                                    <input type="hidden" name="iot" value="button" />
+                                    <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-preto-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                                </form>
+                                <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+                                <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                             <?php endif; ?>
                         </div>
                     </div>
