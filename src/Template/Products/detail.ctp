@@ -41,8 +41,33 @@
                             <?php endif; ?>
                         </div>
                     </div>
+
+                    <div class="row" style="margin-bottom: 35px; margin-top: 20px;">
+                        <div class="col-md-3 col-xs-12 text-center">
+                            <a href="../../img/products/<?php echo $data[0]['image']; ?>" data-lightbox="<?php echo $data[0]['id']; ?>" data-title="<?php echo $data[0]['title']; ?>">
+                                <?php echo $this->Html->image("products/{$data[0]['image']}", array('width' => 250)); ?>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-xs-12 text-center">
+                            <a href="../../img/products/<?php echo $data[0]['image']; ?>" data-lightbox="<?php echo $data[0]['id']; ?>" data-title="<?php echo $data[0]['title']; ?>">
+                                <?php echo $this->Html->image("products/{$data[0]['image']}", array('width' => 250)); ?>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-xs-12 text-center">
+                            <a href="../../img/products/<?php echo $data[0]['image']; ?>" data-lightbox="<?php echo $data[0]['id']; ?>" data-title="<?php echo $data[0]['title']; ?>">
+                                <?php echo $this->Html->image("products/{$data[0]['image']}", array('width' => 250)); ?>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-xs-12 text-center">
+                            <a href="../../img/products/<?php echo $data[0]['image']; ?>" data-lightbox="<?php echo $data[0]['id']; ?>" data-title="<?php echo $data[0]['title']; ?>">
+                                <?php echo $this->Html->image("products/{$data[0]['image']}", array('width' => 250)); ?>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+

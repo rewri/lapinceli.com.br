@@ -8,6 +8,7 @@
     <?= $this->Html->css(array(
         'bootstrap.min.css',
         'font-awesome.css',
+        'lightbox.min.css',
     )) ?>
 
     <?= $this->Html->css('base.css') ?>
@@ -24,11 +25,17 @@
     'jquery-3.3.1.min.js',
     'bootstrap.min.js',
     'font-awesome.min.js',
+    'lightbox.min.js',
     'custom.js',
 )) ?>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxIWs74ryPOv3q19aGpoXIqfaFVQtIw_U&callback=initMap"></script>
 <?= $this->fetch('scriptBottom') ?>
 <script>
+
+    lightbox.option({
+        'wrapAround': true
+    });
+
     function initMap() {
         var center = {lat: -22.880233, lng:  -48.443995};
         var map = new google.maps.Map(

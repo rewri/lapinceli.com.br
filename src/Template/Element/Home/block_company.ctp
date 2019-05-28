@@ -10,7 +10,7 @@
                             <br>
                             Com o compromisso de satisfazer os consumidores, desenvolvemos uma <span class="text-emphasis">aliança entre bem estar, saúde e ciência</span>.
                             <br>
-                            Cada produto e cada avanço foram trazidos para revolucionar os tratamentos capilares, gerado por pessoas que buscam fazer a diferença na área da cosmetologia.
+                            Cada produto e cada avanço foram trazidos para revolucionar os tratamentos capilares, gerado por pessoas que buscam fazer a diferença na área da beleza.
                             <br>
                         </p>
                         <p style="margin-top: 10px; font-size: 16px; font-weight: 600">

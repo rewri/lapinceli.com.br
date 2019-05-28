@@ -11,7 +11,7 @@
                 <?php if (!empty($products)) : ?>
                     <?php foreach($products as $row) : ?>
 
-                        <div class="text-center product-box" style="height: 400px;">
+                        <div class="text-center product-box" style="height: 410px;">
                             <?php $image = "img/products/{$row['image']}"; ?>
                             <div class="product-image" style="background-image: url('<?php echo $image ?>');"></div>
                             <p class="product-title" style="font-family: 'Bebas', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 400"><?php echo $row['title']; ?></p>

@@ -289,7 +289,7 @@ th {
     align-items: center;
     text-align: center;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero_hair.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/2hero_hair.jpg');
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -474,7 +474,7 @@ th {
     align-items: center;
     text-align: center;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/hero_hair.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/layout/2hero_hair.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
