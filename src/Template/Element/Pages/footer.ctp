@@ -15,7 +15,7 @@
                     'escape' => false
                 )
             ) ?>
-            <p style="padding-top: 30px;">Avenida Santana, 360 - Centro - Botucatu/SP<br><br>+55 (14) 3880.9221 / +55 (14) 99737.9599</p>
+            <p style="padding-top: 30px;">Avenida Santana, 360 - Centro - Botucatu/SP<br><br>+55 (14) 3880.9221</p>
             <p><a href="mailto:contato@lapinceli.com.br" style="color: #fff">contato@lapinceli.com.br</a></p>
         </div>
     </div>

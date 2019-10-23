@@ -39,3 +39,5 @@ nbproject/*
 # Sass preprocessor
 .sass-cache/
 node_modules/*
+
+.history

@@ -1,3 +1,23 @@
+<div class="container-fluid">
+    <div class="row" style="padding: 35px 0; background-color: #F1F1F1">
+        <div class="col-md-12 col-xs-12 text-center">
+            <a href="https://lapinceli.com.br/catalogo_LaPinceli_%20out_2019.pdf" target="_blank" style="
+                display: inline-block;
+                height: 65px;
+                line-height: 50px;
+                width: 350px;
+                max-width: 80%;
+                padding: 10px 15px;
+                background-color: #9D6321;
+                border: 1px solid #905b1e;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 300;
+            ">ACESSE NOSSO CATÁLOGO ONLINE</a>
+        </div>
+    </div>
+</div>
 <div class="container-fluid block-newsletter gradient-bottom">
     <div class="row">
         <div class="col-md-5 col-xs-12 hero-image-bottom-div">

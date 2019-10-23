@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 text-left">
-                <span class="fa fa-phone"></span> +55 (14) 3880.9221 &bull; +55 (14) 99737.9599
+                <span class="fa fa-phone"></span> +55 (14) 3880.9221
                 <span style="padding-left: 25px">"Confia ao Senhor tuas obras e teus pensamentos serão estabelecidos. Provérbios 16.3"</span>
             </div>
             <div class="col-md-3 text-right">
