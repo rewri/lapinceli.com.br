@@ -18,5 +18,12 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop:0}, 1500);
     });
 
+    $("#go-to-distributor").click(function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $("#distribuitor").offset().top
+        }, 'slow');
+    });
+
 
 });

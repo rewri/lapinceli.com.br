@@ -1,11 +1,11 @@
 <nav class="navbar">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"  style="background-color: #C99B3E; padding: 7px 10px 2px 10px !important;">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: #C99B3E; padding: 7px 10px 2px 10px !important;">
                 <i class="fas fa-bars" style="color: #fff"></i>
             </button>
                 <?= $this->Html->link(
-                    $this->Html->image('logo_lapinceli.png', array('class' => 'logo', 'alt' => 'Logotipo la Pinceli')),
+                    $this->Html->image('logo_lapinceli.png', array('class' => 'logo', 'alt' => 'Logotipo La Pinceli')),
                     array(
                         'plugin' => null,
                         'controller' => 'home',
@@ -13,7 +13,7 @@
                     ),
                     array(
                         'escape' => false,
-                        'title' => 'La Pinceli',
+                        'title' => 'La Pinceli Professional',
                         'class' => 'navbar-brand'
                     )
                 ); ?>

@@ -41,3 +41,6 @@ nbproject/*
 node_modules/*
 
 .history
+docker-compose.yml
+Dockerfile
+apache.conf

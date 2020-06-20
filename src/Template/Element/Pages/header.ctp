@@ -6,7 +6,7 @@
                 <span style="padding-left: 25px">"Confia ao Senhor tuas obras e teus pensamentos serão estabelecidos. Provérbios 16.3"</span>
             </div>
             <div class="col-md-3 text-right">
-                Siga-nos nas redes sociais
+                Siga-nos nas redes sociais:
                 <a href="https://www.facebook.com/lapinceli/" class="social-icon" title="/lapinceli" target="_blank"><span class="fab fa-facebook-square"></span></a>
                 <a href="https://www.instagram.com/lapinceli/" class="social-icon" title="@lapinceli" target="_blank"><span class="fab fa-instagram"></span></a>
             </div>

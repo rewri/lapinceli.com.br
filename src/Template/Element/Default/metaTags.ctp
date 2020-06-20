@@ -11,7 +11,7 @@
 <meta property="og:url"                content="http://lapinceli.com.br/" />
 <meta property="og:type"               content="website" />
 <meta property="og:title"              content="LA PINCELI PROFESSIONAL" />
-<meta property="og:description"        content="" />
+<meta property="og:description"        content="Compromisso de satisfazer os consumidores, desenvolvemos uma aliança entre bem estar, saúde e ciência." />
 <meta property="og:image"              content="http://lapinceli.com.br/webroot/img/og_image.jpg" />
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
