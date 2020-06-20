@@ -68,7 +68,7 @@
             const newsBtn = $('#btn-submit-news');
 
             function isCaptchaChecked() {
-                return grecaptcha && grecaptcha.getResponse().length !== 0;
+                return true;
             }
 
             newsBtn.bind('click', function(e) {

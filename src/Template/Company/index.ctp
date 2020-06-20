@@ -45,10 +45,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="row" style="padding-top: 50px">
-                    <div class="col-md-6 col-xs-12">
+                <div class="row" style="padding-top: 50px;">
+                    <div class="col-md-12 col-xs-12">
                         <?= $this->Html->link(
-                            'LOJA ONLINE',
+                            'CONHEÇA NOSSA LOJA ONLINE',
                             'https://lapinceliprofessional.mercadoshops.com.br/',
                             array(
                                 'title' => 'Veja nossa loja online',
@@ -58,7 +58,7 @@
                             )
                         ); ?>
                     </div>
-                    <div class="col-md-6 col-xs-12">
+                    <div class="col-md-6 col-xs-12" style="display: none">
                         <?= $this->Html->link(
                             'SEJA UM DISTRIBUIDOR',
                             'javascript:;',
@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-top: 30px">
+                <div class="row" style="margin: 30px 0 40px 0">
                     <div class="col-md-12 col-xs-12">
                         <h1 class="strike" style="text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif"><span class="text-emphasis">&bull;</span> CT La Pinceli</h1>
                         <p style="margin-top: 20px; font-size: 18px">O Centro Técnico La Pinceli foi desenvolvido com a finalidade de cuidar dos nossos clientes de maneira exclusiva e essencial. <br><br>
@@ -96,7 +96,4 @@
         </div>
     </div>
 </div>
-
-<?= $this->Html->css('home.css') ?>
-<?= $this->element('Home/block_newsletter'); ?>
 
