@@ -20,7 +20,8 @@ class ProductsController extends AppController
 
     public function detail($slug = null, $id = null)
     {
-        $data = $this->Products->findById($id)->toArray();
+        $data = $this->Products->findById($id)->contain('ProductImages')->toArray();
+        $data = reset($data);
         $this->set('title', 'produto');
         $this->set(compact('data'));
     }

@@ -4,17 +4,15 @@
     <?= $this->Html->charset() ?>
     <?= $this->element('Default/metaTags') ?>
     <title><?= $defaultPageTitle ?></title>
-
     <?= $this->Html->css(array(
         'bootstrap.min.css',
         'font-awesome.css',
         'owl.carousel.css',
-        'owl.theme.default.css'
+        'owl.theme.default.css',
+        'lightbox.min.css',
     )) ?>
-
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('home.css') ?>
-
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
@@ -22,23 +20,27 @@
     <?= $this->element('Pages/header'); ?>
     <?= $this->fetch('content') ?>
     <?= $this->element('Pages/footer'); ?>
-
     <?= $this->Html->script(array(
         'jquery-3.3.1.min.js',
         'bootstrap.min.js',
         'font-awesome.min.js',
         'owl.carousel.js',
+        'lightbox.min.js',
         'custom.js',
     )) ?>
-
     <?= $this->fetch('scriptBottom') ?>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxIWs74ryPOv3q19aGpoXIqfaFVQtIw_U&callback=initMap"></script>
     <script>
         $(document).ready(function() {
+
+            lightbox.option({
+                'wrapAround': true,
+                'alwaysShowNavOnTouchDevices': true,
+            });
+
             $('.owl-carousel').owlCarousel({
                 loop:true,
-                margin:50,
+                margin:80,
                 responsiveClass:true,
                 responsive:{
                     0:{
@@ -47,12 +49,12 @@
                         dots:false
                     },
                     600:{
-                        items:4,
+                        items:3,
                         nav:false,
                         dots:false
                     },
                     1000:{
-                        items:4,
+                        items:3,
                         nav:true,
                         loop:true,
                         autoplay:true,

@@ -44,6 +44,10 @@ class ProductsTable extends Table
             'foreignKey' => 'category_id',
             'joinType' => 'INNER'
         ]);
+        $this->hasMany('ProductImages', [
+            'foreignKey' => 'product_id',
+            'joinType' => 'INNER'
+        ]);
     }
 
     /**
@@ -119,7 +123,7 @@ class ProductsTable extends Table
 
         $query = $this->find('all')
             ->where(['enabled' => true])
-            ->order(['rand()']);
+            ->order(['title']);
 
 
         return $query->all();
