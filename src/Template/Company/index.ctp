@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="row" style="padding-top: 50px;">
-                    <div class="col-md-12 col-xs-12">
+                    <div class="col-md-6 col-xs-12">
                         <?= $this->Html->link(
                             'CONHEÇA NOSSA LOJA ONLINE',
                             'https://lapinceliprofessional.mercadoshops.com.br/',
@@ -58,15 +58,15 @@
                             )
                         ); ?>
                     </div>
-                    <div class="col-md-6 col-xs-12" style="display: none">
+                    <div class="col-md-6 col-xs-12">
                         <?= $this->Html->link(
-                            'SEJA UM DISTRIBUIDOR',
-                            'javascript:;',
+                            'CONHEÇA NOSSO CATÁLOGO VIRTUAL',
+                            'http://www.lapinceli.com.br/catalogo_2020_La_Pinceli_Professional.pdf',
                             array(
-                                'title' => 'Seja um distribuidor La Pinceli',
+                                'title' => 'Conheça nosso catálogo',
                                 'escape' => false,
                                 'class' => 'btn btn-block btn-home',
-                                'id' => 'go-to-distributor'
+                                'target' => '_blank'
                             )
                         ); ?>
                     </div>

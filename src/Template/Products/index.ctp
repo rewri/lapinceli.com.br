@@ -99,18 +99,30 @@
             <?php if (!empty($data)) : ?>
                 <div class="row" style="margin-bottom: 40px">
 
-                <div class="col-md-12 col-xs-12" style="margin: 5px 0 45px 0">
-                    <?= $this->Html->link(
-                        'CONHEÇA NOSSA LOJA ONLINE',
-                        'https://lapinceliprofessional.mercadoshops.com.br/',
-                        array(
-                            'title' => 'Veja nossa loja online',
-                            'escape' => false,
-                            'class' => 'btn btn-block btn-home',
-                            'target' => '_blank'
-                        )
-                    ); ?>
-                </div>
+                    <div class="col-md-6 col-xs-12" style="margin: 5px 0 45px 0">
+                        <?= $this->Html->link(
+                            'CONHEÇA NOSSA LOJA ONLINE',
+                            'https://lapinceliprofessional.mercadoshops.com.br/',
+                            array(
+                                'title' => 'Veja nossa loja online',
+                                'escape' => false,
+                                'class' => 'btn btn-block btn-home',
+                                'target' => '_blank'
+                            )
+                        ); ?>
+                    </div>
+                    <div class="col-md-6 col-xs-12" style="margin: 5px 0 45px 0">
+                        <?= $this->Html->link(
+                            'CONHEÇA NOSSO CATÁLOGO VIRTUAL',
+                            'http://www.lapinceli.com.br/catalogo_2020_La_Pinceli_Professional.pdf',
+                            array(
+                                'title' => 'Veja nosso catálogo',
+                                'escape' => false,
+                                'class' => 'btn btn-block btn-home',
+                                'target' => '_blank'
+                            )
+                        ); ?>
+                    </div>
 
                     <?php foreach ($data as $row) : ?>
                         <div class="col-md-6 col-xs-12 text-center" style="margin-bottom: 60px;">
@@ -148,12 +160,24 @@
                     <?php endforeach; ?>
                 </div>
 
-                <div class="col-md-12 col-xs-12" style="margin: 30px 0">
+                <div class="col-md-6 col-xs-12" style="margin: 5px 0 45px 0">
                     <?= $this->Html->link(
                         'CONHEÇA NOSSA LOJA ONLINE',
                         'https://lapinceliprofessional.mercadoshops.com.br/',
                         array(
                             'title' => 'Veja nossa loja online',
+                            'escape' => false,
+                            'class' => 'btn btn-block btn-home',
+                            'target' => '_blank'
+                        )
+                    ); ?>
+                </div>
+                <div class="col-md-6 col-xs-12" style="margin: 5px 0 45px 0">
+                    <?= $this->Html->link(
+                        'CONHEÇA NOSSO CATÁLOGO VIRTUAL',
+                        'http://www.lapinceli.com.br/catalogo_2020_La_Pinceli_Professional.pdf',
+                        array(
+                            'title' => 'Veja nosso catálogo',
                             'escape' => false,
                             'class' => 'btn btn-block btn-home',
                             'target' => '_blank'

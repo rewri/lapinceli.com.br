@@ -1,7 +1,12 @@
-<div class="container-fluid">
-    <div class="row" style="padding: 35px 0; background-color: #F1F1F1">
-        <div class="col-md-12 col-xs-12 text-center">
-            <a href="https://lapinceliprofessional.mercadoshops.com.br" target="_blank" class="btn-loja">ACESSE NOSSA LOJA ONLINE</a>
+<div class="container-fluid" style="padding: 55px 0; background-color: #F1F1F1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 text-center" style="padding-bottom: 0">
+                <a href="https://lapinceliprofessional.mercadoshops.com.br" target="_blank" class="btn-loja">ACESSE NOSSA LOJA ONLINE</a>
+            </div>
+            <div class="col-md-6 col-xs-12 text-center" style="padding-bottom: 0">
+                <a href="http://www.lapinceli.com.br/catalogo_2020_La_Pinceli_Professional.pdf" target="_blank" class="btn-loja">ACESSE NOSSO CATÁLOGO VIRTUAL</a>
+            </div>
         </div>
     </div>
 </div>

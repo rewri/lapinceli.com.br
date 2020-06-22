@@ -81,12 +81,24 @@
             </div>
         </div>
 
-        <div class="col-md-12 col-xs-12" style="margin: 5px 0 25px 0">
+        <div class="col-md-6 col-xs-12" style="margin: 5px 0 25px 0">
             <?= $this->Html->link(
                 'CONHEÇA NOSSA LOJA ONLINE',
                 'https://lapinceliprofessional.mercadoshops.com.br/',
                 array(
                     'title' => 'Veja nossa loja online',
+                    'escape' => false,
+                    'class' => 'btn btn-block btn-home',
+                    'target' => '_blank'
+                )
+            ); ?>
+        </div>
+        <div class="col-md-6 col-xs-12" style="margin: 5px 0 25px 0">
+            <?= $this->Html->link(
+                'CONHEÇA NOSSO CATÁLOGO ONLINE',
+                'http://www.lapinceli.com.br/catalogo_2020_La_Pinceli_Professional.pdf',
+                array(
+                    'title' => 'Veja nosso catálogo',
                     'escape' => false,
                     'class' => 'btn btn-block btn-home',
                     'target' => '_blank'
