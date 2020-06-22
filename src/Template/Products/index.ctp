@@ -1,3 +1,5 @@
+<?php use Cake\Routing\Router; ?>
+
 <a id="toTopButton" title="Ir para o topo">
     <span class="fa fa-arrow-up"></span>
 </a>
@@ -17,7 +19,8 @@
     padding: 35px 0 15px 0;
 }
 .block-products .product-box {
-    border: 1px solid #fff;
+    border: 1px solid #ccc;
+    background-color: #fff;
     border-radius: 15px;
     transition: border-color 0.6s linear, opacity .5s;
 }
@@ -39,6 +42,7 @@
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
+    margin-top: 15px;
 }
 .block-products .product-subtitle{
     font-size: 18px;
@@ -63,7 +67,7 @@
     text-decoration: none;
     transition: background-color 0.5s ease;
     margin-bottom: 5px;
-    width: 80%;
+    width: 90%;
     display: inline-block;
     text-align: center;
 }
@@ -92,7 +96,7 @@
 
 </style>
 
-<div class="container block-products" style="padding-top: 30px; background-color: #fff">
+<div class="container block-products" style="padding-top: 30px; background-color: #FCFCFC">
     <div class="row">
         <div class="col-md-12 col-xs-12 text-center" style="min-height: 1000px">
             <h2 class="strike" style="padding-bottom: 20px; text-transform: uppercase; font-family: 'Bebas', Arial, Helvetica, sans-serif">Nossos produtos</h2>
@@ -128,17 +132,20 @@
                         <div class="col-md-6 col-xs-12 text-center" style="margin-bottom: 60px;">
                             <div class="text-center product-box">
                                 <div class="row">
-                                    <div class="col-cd-12 col-xs-12">
-                                        <?php $image = "img/products/{$row['id']}/{$row['image']}"; ?>
-
-                                        <a href="../../img/products/<?php echo $row['id']; ?>/<?php echo $row['image']; ?>" title="Clique para ampliar" class="product-image" data-lightbox="<?php echo $row['id']; ?>" data-title="<?php echo $row['title']; ?>">
+                                    <?php $url = Router::fullBaseUrl() . Router::url(['plugin' => null,
+                                    'controller' => 'products',
+                                    'action' => 'detail',
+                                    'slug' => strtolower(\Cake\Utility\Text::slug($row['title'], '-')),
+                                    'id' => $row['id']]); ?>
+                                    <a href="<?php echo $url; ?>" style="color: #282828; text-decoration: none" title="Ver mais detalhes de <?php echo $row['title']; ?>">
+                                        <div class="col-cd-12 col-xs-12">
+                                            <?php $image = "img/products/{$row['id']}/{$row['image']}"; ?>
                                             <?php echo $this->Html->image("products/{$row['id']}/{$row['image']}", array('style' => 'max-width: 80%; max-height:100%;')); ?>
-                                        </a>
-
-                                        <p class="product-title"><?php echo $row['title']; ?></p>
-                                        <p class="product-subtitle"><?php echo $row['subtitle']; ?></p>
-                                        <p class="product-subtitle"><?php echo $row['info']; ?></p>
-                                    </div>
+                                            <p class="product-title"><?php echo $row['title']; ?></p>
+                                            <p class="product-subtitle"><?php echo $row['subtitle']; ?></p>
+                                            <p class="product-subtitle"><?php echo $row['info']; ?></p>
+                                        </div>
+                                    </a>
                                     <div class="col-md-12 col-xs-12 text-center">
                                         <p style="padding-top: 10px">
                                         <?= $this->Html->link(
