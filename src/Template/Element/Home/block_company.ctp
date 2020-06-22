@@ -14,11 +14,21 @@
                             <br>
                             Cada produto e cada avanço foram trazidos para revolucionar os tratamentos capilares, gerado por pessoas que buscam fazer a diferença na área da beleza.
                             <br>
+                            <?= $this->Html->link(
+                                'Conheça mais aqui <i class="fa fa-angle-double-right" aria-hidden="true"></i>',
+                                array(
+                                    'plugin' => null,
+                                    'controller' => 'company',
+                                    'action' => 'index',
+                                ),
+                                array(
+                                    'title' => 'Conheça nossa história',
+                                    'escape' => false,
+                                    'style' => 'text-transform: uppercase; color: #AC7833; font-weight: 900; text-decoration: underline'
+                                )
+                            ); ?>
                         </p>
-                        <p style="margin-top: 10px; font-size: 16px; font-weight: 600; display: none">
-                            Assim chegamos ao nosso resultado final e é com grande alegria que apresentamos a vocês a primeira linha de produtos <span class="text-emphasis">LA PINCELI PROFESSIONAL</span>.
-                        </p>
-                        <div class="row" style="padding-top: 50px">
+                        <div class="row" style="padding-top: 25px">
                             <div class="col-md-4 col-xs-12">
                                 <?= $this->Html->link(
                                     'CT LA PINCELI',

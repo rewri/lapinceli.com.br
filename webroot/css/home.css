@@ -83,10 +83,10 @@ body {
     font-weight: 500;
 }
 .block-products .btn-product-detail {
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 18px;
-    background-color: #fff;
+    background-color: #f7f7f4;
     border: 1px solid #AC7833;
     color: #AC7833;
     border-radius: 8px;
